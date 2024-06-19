@@ -48,8 +48,8 @@ const imagePic = await imageTobase64(file)
       e.preventDefault()
 
       if(data.password === data.confirmPassword){
-        
-        const dataResponse = await fetch("http://localhost:8080/api/signup",{
+        //"http://localhost:8080/api/signup"
+        const dataResponse = await fetch(SummaryApi.signUP.url,{
           method : SummaryApi.signUP.method,
           headers: {
             'content-Type': 'application/json', 
